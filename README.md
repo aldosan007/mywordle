@@ -1,1 +1,1 @@
-Version lite del juego wordle 
+Version lite del juego wordle
