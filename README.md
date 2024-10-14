@@ -11,7 +11,7 @@ Interfaz del Juego
 Cuando abrís el juego, te encontrás con una pantalla inicial muy simple.
 Directamente enfocas la mirada en el tablero y el teclado para que empieces a jugar.
 Tablero del Juego
-El tablero es una cuadrícula de 5 columnas por 6 filas (es decir, tenés 6
+El tablero es una cuadrícula de 5 columnas por 5 filas (es decir, tenés 6
 oportunidades para adivinar la palabra).
 Los casilleros se encuentran vacíos al inicio y a medida que escribís tus letras, se
 van llenando.
