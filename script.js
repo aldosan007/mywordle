@@ -1,7 +1,7 @@
 const listaDePalabras = ["JUEGO", "CASAS", "NIEVE", "PERRO", "GATOS", "COCHE", "PARTE", "LIBRO", "FUEGO", "PLATA"];
 let palabraSecreta = listaDePalabras[Math.floor(Math.random() * listaDePalabras.length)].toUpperCase(); 
 console.log("Palabra secreta: ", palabraSecreta); 
-
+//Funcion para construir el Tablero
 function construirTablero(){
    const tablero = document.getElementById("tablero");
     for(let i = 0; i < 6; i++){
@@ -18,6 +18,7 @@ function construirTablero(){
     }
 }
 
+//Funcion para construir el Teclado
 function construirTeclado() {
     const teclado = document.getElementById("teclado");
 
@@ -61,6 +62,7 @@ function construirTeclado() {
 
 let palabraActual = [];
 
+//Funcion para manejar el teclado
 function manejarClickTeclado(letra) {
     if (letra === "DEL") {
         palabraActual.pop();
