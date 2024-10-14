@@ -38,9 +38,4 @@ y te muestra un ícono de trofeo 🏆. ¡Bien ahí!
 ● Si no lográs adivinar la palabra en los seis intentos, no pasa nada, el juego te
 muestra cuál era la palabra correcta con un ícono triste 🙁, para que puedas
 ver en qué fallaste y empezar de nuevo.
-Reinicio de Partida
-Después de terminar una partida (ya sea ganada o perdida), tenés la opción de
-reiniciar la partida. Simplemente hacés clic en el botón Reiniciar y podés arrancar
-de cero otra vez 
-
 https://www.figma.com/proto/8mGDN2oWAqFRIjzTAGD8bL/Wordle-lite-Aldo-Rivas?node-id=1-4&t=VwD3tr00v7iIMVlI-1
