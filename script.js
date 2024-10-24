@@ -1,4 +1,7 @@
 // Función que obtiene la palabra secreta desde la API pública y la valida
+let palabrasUsadas = []; 
+let listaDePalabras = ["CASAS", "PERRO", "GATOS", "AUTO", "LIBRO", "FUEGO", "PLATA"];
+
 async function obtenerPalabraSecreta() {
     try {
         let palabraValida = false;
@@ -9,17 +12,19 @@ async function obtenerPalabraSecreta() {
             const data = await response.json();
             palabra = data[0].toUpperCase();
 
-            if (/^[A-Z]{5}$/.test(palabra)) {
+            if (/^[A-Z]{5}$/.test(palabra) && !palabrasUsadas.includes(palabra)) {
                 palabraValida = true;
-                console.log("Palabra inválida, solicitando otra...");
+                palabrasUsadas.push(palabra); 
+            } else {
+                console.log("Palabra no válida o repetida, buscando otra...");
             }
         }
 
-        console.log("Palabra secreta válida desde API: ", palabra);
+        console.log("La palabra secreta válida desde la API: ", palabra);
         return palabra;
 
     } catch (error) {
-        console.error("Error al obtener la palabra secreta: ", error);
+        console.error("Error al tratar de obtener la palabra secreta: ", error);
         return listaDePalabras[Math.floor(Math.random() * listaDePalabras.length)].toUpperCase();
     }
 }
