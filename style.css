@@ -10,51 +10,58 @@ button {
     margin: 5px;
     align-items: center;
     justify-content: center;
-    flex-grow: 1;
     border: none;
     border-radius: 10px;
     cursor: pointer;
 }
 
 button:hover {
-  background-color:blue;
+  background-color: blue;
 }
 
 .espacio {
-    flex-grow: 1;
+    width: 100px;
+    flex-grow: 0; 
 }
-
 
 .matriz {
     display: flex;
     flex-direction: column;
-    padding-left: 600px;
-    padding-right: 600px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     background-color: #FFFFFF;
+    max-width: 800px;
 }
 
 .fila-letras {
     display: flex;
     justify-content: stretch;
-    flex-direction: row;
-    font-family: 'Montana',serif;
-    font-style: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 .fila {
-    display: flex
+    display: flex;
 }
 
 .caja {
-  border: 1px solid black;
-  width: 70px;
-  height: 70px;
-  border-radius: 10px;
-  margin: 5px;
-  padding: 3px;
+    border: 1px solid black;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    text-transform: uppercase;
+
 }
 
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    text-align: center;
 }
